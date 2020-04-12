@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Le Vintage</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <header id="head">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/LeVintageAvellino" target="_blank">
+                    <img id="facelogo" src="~/images/facebook.png" alt="facebook logo" style="float:right" />
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/le_vintage_cafe" target="_blank">
+                    <img id="twitterlogo" src="~/images/twitterlogo.jpg" alt="Twitter" style="float:right" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/explore/locations/434609808/" target="_blank">
+                    <img id="instagramlogo" src="~/images/instagramlogo.jpg" alt="Instagram" style="float:right" />
+                </a>
+            </li>
+        </ul>
+
+        <div id="shop">
+            <a asp-area="" asp-controller="Home" asp-action="Index"><img style="width: 200px;" id="shoplogo" src="~/images/dene2.png" alt="Shop logo" /></a>
+            <img id="shopname" src="~/images/text.jpg" alt="Shop name" />
+            <a asp-action="WishList" asp-controller=""><img id="order" src="~/images/order.png" style="width:50px" /></a>
+            
+        </div>
+
+    </header>
+    <nav class="navbar navbar-expand-sm invisible-xs sticky-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a id="navbardrop" class="nav-link dropdown dropdown-toggle" href="#" data-toggle="dropdown">Vintage</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Gomlek">Gömlek</a>
+                    <br />
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Sweat">Sweat</a>
+                    <br />
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="MontveKaban">Mont ve Kaban</a>
+                    <br />
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Ceket">Ceket</a>
+                    <br />
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Elbise">Elbise</a>
+                    <br />
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Kazak">Kazak</a>
+                    <br />
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Etek">Etek</a>
+                    <br />
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="PantolonveSort">Pantolon ve Şort</a>
+                    <br />
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Aksesuar">Aksesuar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Gozluk">Gözlük</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Dekorasyon">Dekorasyon</a>
+            </li>
+        </ul>
+        @await Html.PartialAsync("_LoginPartial")
+
+    </nav>
+
+
+    
+        @RenderBody()
+        <hr />
+        <footer class="panel-footer">
+            <div class="container">
+                <div class="row">
+                    <section id="onemBilgiler" class="col-sm-4">
+                        <h4>     <strong>Önemli Bilgiler</strong></h4>
+                        <ul>
+                            <li>
+                                <a href="#">Teslimat Koşulları</a>
+                            </li>
+                            <li>
+                                <a href="#">Üyelik Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a href="#">Satış Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a href="#">Garanti ve İade koşulları</a>
+                            </li>
+                            <li>
+                                <a href="#">Gizlilik ve Güvenlik</a>
+                            </li>
+                        </ul>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="hakkimizda" class="col-sm-4">
+                        <h4><strong>Hakkımızda</strong></h4>
+                        <span><strong>Telefon: </strong>0(232) 111 11 11</span> <br />
+                        <span><strong>E-mail: </strong>levintage@gmail.com</span> <br />
+                        <span><strong>Adres: </strong>Kadıköy</span>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="uyelikHizmetleri" class="col-sm-4">
+                        <h4><strong>Üyelik Hizmetleri</strong></h4>
+                        <ul>
+                            <li>
+                                <a href="#">Toptan Satis</a>
+                            </li>
+                            <li>
+                                <a href="#">Banka Hesap Bilgileri</a>
+                            </li>
+                            <li>
+                                <a href="#">Sipariş Takibi</a>
+                            </li>
+                            <li>
+                                <a href="#">Sıkça Sorulan Sorular</a>
+                            </li>
+                        </ul>
+                        <hr class="visible-xs">
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

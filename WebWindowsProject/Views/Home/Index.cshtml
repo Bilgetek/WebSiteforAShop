@@ -1,0 +1,95 @@
+﻿@model IEnumerable<WebWindowsProject.Models.ProductItem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<environment include="Development">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</environment>
+<environment exclude="Development">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+</environment>
+
+<div class="slideshow-container">
+    <div class="slidePages fade">
+        <div class="page"> 1 / 4 </div>
+        <img src="~/images/vintage.jpg" alt="Vintage1" style="width:100%;" />
+        <div class="text"></div>
+    </div>
+    <div class="slidePages fade">
+        <div class="page"> 2 / 4 </div>
+        <img src="~/images/vintage2.jpg" alt="Vintage2" style="width:100%;" />
+        <div class="text"></div>
+    </div>
+    <div class="slidePages fade">
+        <div class="page"> 3 / 4 </div>
+        <img src="~/images/background.jpeg" alt="Vintage3" style="width:100%;" />
+        <div class="text"></div>
+    </div>
+    <div class="slidePages fade">
+        <div class="page"> 4 / 4 </div>
+        <img src="~/images/vintage4.jpg" alt="Vintage4" style="width:100%;" />
+        <div class="text"></div>
+    </div>
+    <a class="previous" onclick="nextSlides(-1)">&#10094;</a>
+    <a class="next" onclick="nextSlides(1)">&#10095;</a>
+</div>
+
+<br />
+
+<div style="text-align:center">
+    <span class="dot active" onclick="current(1)"></span>
+    <span class="dot" onclick="current(2)"></span>
+    <span class="dot" onclick="current(3)"></span>
+    <span class="dot" onclick="current(4)"></span>
+</div>
+<br />
+<p style="text-align:center; font-weight:bold; font-size:50px; font-family:'Juice ITC'" lang="tr">ÖNE ÇIKANLAR</p>
+<br />
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="polaroid col-md-4 col-sm-6 col-xs-12">
+
+            <a asp-action="Etek">
+                <img class="zoom" src="~/images/favs1.jpeg" alt="Onecikan1" />
+            </a>
+            <div class="col-md-3 col-sm-6 col-xs-12">Haki Yeşil Viskon Etek</div>
+        </div>
+        <div class="polaroid col-md-4 col-sm-6 col-xs-12">
+            <a asp-action="Elbise">
+                <img class="zoom" src="~/images/favs2.jpeg" alt="Onecikan2" />
+            </a>
+            <div class="col-md-3 col-sm-6 col-xs-12">Kırmızı Gül Desenli Siyah Elbise</div>
+        </div>
+        <div class="polaroid col-md-4 col-sm-6 col-xs-12">
+            <a asp-action="Gomlek">
+                <img class="zoom" src="~/images/favs3.jpeg" alt="Onecikan3" />
+            </a>
+            <div class="col-md-3 col-sm-6 col-xs-12">Çiçek Desenli 70ler Gömlek</div>
+
+        </div>
+        <div class="polaroid col-md-4 col-sm-6 col-xs-12">
+            <a asp-action="Etek">
+                <img class="zoom" src="~/images/favs4.jpeg" alt="Onecikan4" />
+            </a>
+            <div class=" col-md-3 col-sm-6 col-xs-12">Ekoseli Jile Etek</div>
+        </div>
+        <div class="polaroid col-md-4 col-sm-6 col-xs-12">
+            <a asp-action="Gomlek">
+                <img class="zoom" src="~/images/favs5.jpeg" alt="Onecikan5" />
+            </a>
+            <div class=" col-md-3 col-sm-6 col-xs-12">Çiçek Desenli Şifon Gömlek</div>
+        </div>
+
+    </div>
+</div>
+
+
+

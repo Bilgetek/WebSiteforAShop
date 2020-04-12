@@ -1,0 +1,9 @@
+E:\temp\FileUploadControl\bin\Debug\netcoreapp2.0\FileUploadControl.deps.json
+E:\temp\FileUploadControl\bin\Debug\netcoreapp2.0\FileUploadControl.dll
+E:\temp\FileUploadControl\obj\Debug\netcoreapp2.0\FileUploadControl.csproj.CoreCompileInputs.cache
+E:\temp\FileUploadControl\obj\Debug\netcoreapp2.0\FileUploadControl.AssemblyInfoInputs.cache
+E:\temp\FileUploadControl\obj\Debug\netcoreapp2.0\FileUploadControl.AssemblyInfo.cs
+E:\temp\FileUploadControl\obj\Debug\netcoreapp2.0\FileUploadControl.csprojResolveAssemblyReference.cache
+E:\temp\FileUploadControl\bin\Debug\netcoreapp2.0\FileUploadControl.pdb
+E:\temp\FileUploadControl\obj\Debug\netcoreapp2.0\FileUploadControl.dll
+E:\temp\FileUploadControl\obj\Debug\netcoreapp2.0\FileUploadControl.pdb

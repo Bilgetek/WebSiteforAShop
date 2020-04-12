@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebWindowsProject.Models.ProductItem>
+
+@{
+    ViewData["Title"] = "Dekorasyon";
+}
+
+<h2>Dekorasyon</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+                
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypeName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Image)
+                </th>
+               
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <img src="@item.Image" width="100" height="100" asp-append-version="true" />
+            </td>
+            <td>
+                <a asp-action="SatinAl" asp-route-id="@item.productId">Ürünü satın al</a> |
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

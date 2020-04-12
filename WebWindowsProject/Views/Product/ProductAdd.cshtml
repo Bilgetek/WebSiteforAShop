@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "ProductView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<ProductItem>
+@using Humanizer;
+
+<h2>ProductAdd</h2>
+@{ 
+    foreach (ProductItem item in Model)
+    {
+        <p>@item.Description </p>
+    }
+}

@@ -1,0 +1,60 @@
+﻿@model WebWindowsProject.Models.SatinAlViewModel
+
+@{
+    ViewData["Title"] = "Buy it !";
+}
+
+<h2>Satın Al</h2>
+
+
+<a asp-action="WishList" asp-controller="">Sepetiniz</a>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SatinAl" method="post" enctype="multipart/form-data" asp-controller="Home">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="product_name" class="control-label"></label>
+                @Model.product_name
+            </div>
+            <div class="form-group">
+                <label asp-for="price" class="control-label"></label>
+                @Model.price
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="type_name" class="control-label"></label>
+                @Model.type_name
+                <span asp-validation-for="type_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="description" class="control-label"></label>
+                @Model.description
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="product_id" class="control-label"></label>
+                @Model.product_id
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" placeholder="Üründen almak istediğiniz miktar" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Sepete Ekle" class="btn btn-default" style="font-size:25px" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @TempData["Success"]
+    <a asp-action="Index">Back to Home Page</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

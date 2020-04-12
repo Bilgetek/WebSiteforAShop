@@ -1,0 +1,214 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Juice ITC';
+    font-size: 25px;
+}
+ul {
+    list-style: none;
+}
+#order{
+    float:right;
+    margin-top:25px;
+    padding-top:50px;
+    margin-left:15px
+}
+#head li a{
+    list-style-type:none;
+}
+
+#head li a img {
+    width: 50px;
+    margin-right: 25px;
+}
+
+#shoplogo {
+    width: 200px;
+
+}
+
+#shopname {
+    margin-left: 650px;
+    width: 750px;
+    height: 150px;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+        display: inline-block;
+        float: none;
+        margin-left: 60px;
+}
+
+.nav-item a {
+    color: pink;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: 'Juice ITC';
+}
+
+.dropdown-menu {
+    opacity: 0.8;
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.slidePages {
+    display: none;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height:80px;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    .previous:hover, .next:hover {
+        background-color: sandybrown;
+    }
+
+.text {
+    color: rosybrown;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: rosybrown;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: sandybrown;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: pink;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+div.polaroid {
+    background-color: white;
+    box-shadow: 0 7px 10px 0 pink, 0 8px 5px 0 pink;
+    border-right-width: 1px;
+}
+
+.polaroid img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding: 4px 7px 7px 4px;
+}
+
+/*.row div {
+    margin-bottom: 15px;
+    height:900px;
+}*/
+
+.polaroid div {
+    font-family: 'Juice ITC';
+    font-size: 30px;
+}
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: lavender;
+    border-top: 0;
+    font-size: 25px;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+    .zoom:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+
+section ul {
+    list-style: none;
+    margin-left: 0px;
+}
+
+section li a {
+    color: brown;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    font-size: 25px;
+    border-top: 1px solid #ddd;
+}

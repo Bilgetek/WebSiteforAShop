@@ -1,0 +1,15 @@
+E:\temp\WebWindowsProject\bin\Debug\netcoreapp2.0\WebWindowsProject.deps.json
+E:\temp\WebWindowsProject\bin\Debug\netcoreapp2.0\WebWindowsProject.runtimeconfig.json
+E:\temp\WebWindowsProject\bin\Debug\netcoreapp2.0\WebWindowsProject.runtimeconfig.dev.json
+E:\temp\WebWindowsProject\bin\Debug\netcoreapp2.0\WebWindowsProject.dll
+E:\temp\WebWindowsProject\bin\Debug\netcoreapp2.0\WebWindowsProject.pdb
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\WebWindowsProject.csproj.CoreCompileInputs.cache
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\WebWindowsProject.AssemblyInfoInputs.cache
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\WebWindowsProject.AssemblyInfo.cs
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\WebWindowsProject.dll
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\WebWindowsProject.pdb
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\WebWindowsProject.csprojResolveAssemblyReference.cache
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\temp\WebWindowsProject\bin\Debug\netcoreapp2.0\FileUploadControl.dll
+E:\temp\WebWindowsProject\bin\Debug\netcoreapp2.0\FileUploadControl.pdb
+E:\temp\WebWindowsProject\obj\Debug\netcoreapp2.0\WebWindowsProject.csproj.CopyComplete
